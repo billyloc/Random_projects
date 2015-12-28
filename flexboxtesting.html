@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<style>
+		html {
+    	box-sizing: border-box;
+    	color: #444;
+    	font: 10pt 'Open Sans', Arial;
+    	font-weight: 300;
+		}
+
+		*, *::before, *::after {
+    	box-sizing: inherit;
+    	color: inherit;
+    	font: inherit;
+		}
+		body {
+			background-color: #0182C3;
+		}
+		main {
+			display: flex;
+			background-color: yellow;
+		}
+		aside {
+			flex: 1;
+			display: inline-block;
+			background-color: green;
+		}
+		article {
+			flex: 3;
+			display: inline-block;
+			background-color: aqua;
+		}
+		span {
+			flex: 4;
+			text-align: left;
+		}
+		.input {
+			text-align: right;
+			flex: 1;
+			margin-right: 7px;
+		}
+		p {
+			display: flex;
+			flex: 2;
+		}
+		title {
+			width: 8px;
+			display: inline-block;
+		}
+		h1 {
+			margin-left: 10px;
+		}	
+		article {
+			margin-left: 10px;
+			margin-right: 10px;
+		}
+	</style>
+</head>
+<body>
+	<main>
+		<aside>
+			<h1>Hello World</h1>
+			<span>Welcome to our website, we hope you enjoy giving us your information so we can make money off you!</span>
+		</aside>
+		<title></title>
+		<article>
+		<h1>Signup Form</h1>
+			<section>
+				<div>
+					<p>
+						<span class="input">First Name</span>
+						<span><input type="text"></span>
+					</p>
+				</div>
+				<hr>
+				<div>
+					<p>
+						<span class="input">Last Name</span>
+						<span><input type="text"></span>
+					</p>
+				</div>
+				<hr>
+				<div>
+					<p>
+						<span class="input">Email</span>
+						<span><input type="text"></span>
+					</p>
+				</div>
+				<button>Submit</button>
+				<button>Cancel</button>
+			</section>
+		</article>
+	</main>
+
+
+
+</body>
+</html>

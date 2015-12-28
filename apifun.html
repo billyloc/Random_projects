@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>star wars</title>
+	<script src="https://code.jquery.com/jquery-2.1.4.js"></script>
+	<script>
+	$("button").click(getStarWarsData());
+
+	function getStarWarsData() {
+		var url = "http://api.themoviedb.org/3/search/movie?api_key=ffce18b2c26c717a5bce76d4fcfd1b2b&query=the+breakfast+club";
+
+		$.get(url, function(data) {
+			console.log(data);
+			$.each(data.results, function(idx,item){
+				$("ul").append("<li>" +   item.original_title   + item.release_date + item.overview +"</li>")
+			})
+		})
+	}
+	</script>
+</head>
+<body>
+
+
+	<form action="">
+		<input type="search" name="search">
+		<button>Search Movies</button>
+	</form>
+	<h1>Star Wars Vehicles</h1>
+<!-- 	<button>Get the Data</button> -->
+	<ul>
+	</ul>
+</body>
+</html>

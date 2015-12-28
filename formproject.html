@@ -1,0 +1,37 @@
+<?php  
+
+$states = ["New Mexico", "Arizona", "California"];
+
+foreach($states as $key=>$state) {
+	$opt .="<option value =" .  $key  ."> ".  $state . "</option>";
+}
+
+?>
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Forms</title>
+</head>
+<body>
+	<form action="login.php" method="GET">
+		Username<input type="text" value="" name="username" required><br>
+		Password<input type="password" value="" name="password" required><br>	
+		Gender : 
+		<input type="radio" value="male"> Male 
+		<input type="radio" value="female"> Female <br>
+		<select name="states" id="states">
+<!-- 			<option value="nm">New Mexico</option>
+			<option value="az">Arizona</option>
+			<option value="ca">California</option> -->
+			<?php $opt ?>
+		</select><br>
+		<button>OK</button>
+	</form>
+
+
+</body>
+</html>

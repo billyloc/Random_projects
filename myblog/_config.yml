@@ -1,0 +1,15 @@
+# Site settings
+title: BillyLoc's Blog
+email: your-email@domain.com
+description: > This is my first blog. dont know what will come of it, and how 
+often I will update it, but I will do my best to add content daily especially
+around my experience with Rockit Bootcamp.
+baseurl: "" # the subpath of your site, e.g. /blog/
+url: "http://yourdomain.com" # the base hostname & protocol for your site
+twitter_username: billyloc_az
+github_username:  billyloc
+instagram_username: w13bird
+
+# Build settings
+markdown: kramdown
+Billy: I like to code

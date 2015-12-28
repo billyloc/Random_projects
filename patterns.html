@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<style>
+	.container {
+		width: 500px;
+		background-color: blue;
+		text-align: center;
+	}
+	.centered {
+		background-color: aqua;
+		width: 25%;
+		display: inline;
+		padding: 1px;
+	}
+
+	.container > * + * {
+		margin-left: 10px;
+	}
+
+
+
+
+	.new {
+		background-color: lightblue;
+		width: 500px;
+		height:300px;
+		position: relative;
+	}
+	.new div {
+		background-color: orange;
+		width: 30px;
+		height: 30px;
+		position: relevant;
+		right: 0;
+		top: 0;
+	}
+	form {
+		position: absolute;
+		right: 0;
+		top: 0;
+	}
+
+	input:after {
+
+		background-color: blue;
+	}
+
+	.search>input {
+		background-color: blue;
+	}
+	input {
+		margin-right: 2px;
+	}
+
+
+
+	</style>
+</head>
+<body>
+	<header>Some text here</header>
+	<div class="container">
+			<div class="centered">
+				some more text here
+			</div>
+			<div class="centered">
+				some more text here
+			</div>
+			<div class="centered">
+				some more text here
+			</div>
+	</div>
+	<hr>
+
+	<div class="new">
+		<div class"search">
+			<form action="">
+				<input type="text" value="search"> <input type="submit">
+			</form>
+		</div>
+	</div>
+
+	<footer></footer>
+</body>
+</html>

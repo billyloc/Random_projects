@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<style>
+	.page {
+		background-color: #aaa;
+		padding: 10px;
+	}
+	aside {
+		background-color: red;
+		min-height: 200px;
+	}
+	main {
+		background-color: blue;
+		min-height: 200px;
+	}
+
+
+	@media screen and (min-width: 600px) and (max-width: 1000px) {
+
+		.page {
+			display: flex;
+		}
+		aside {
+			width: 200px;
+			background-color: pink;
+		}
+		main {
+			flex: 1;
+			background-color: brown;
+		}
+
+	}
+
+	@media screen and (min-width: 1000px) {
+		aside {
+			background-color: yellow;
+		}
+		main {
+			background-color: gold;
+
+		}
+
+	}	
+
+	aside {
+	  -webkit-transition: -webkit-transform .8s ease-in-out;
+	  transition: transform .8s ease-in-out;
+	}
+	aside:hover {
+	  -webkit-transform: rotate(360deg);
+	  transform: rotate(360deg);
+	}
+	</style>
+</head>
+<body>
+	<div class="page">
+		<aside></aside>
+		<main></main>
+	</div>
+</body>
+</html>

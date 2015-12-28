@@ -1,0 +1,18 @@
+drop database if exists Classroom;
+
+create database Classroom;
+use Classroom;
+
+create table Rockit (
+	classID INT AUTO_INCREMENT primary key NOT NULL,
+	desk INT NOT NULL,
+	color varchar(255) NOT NULL,
+	roomNumber INT not null
+
+);
+
+insert into Rockit (desk,color,roomNumber)values (25, "blue", 7);
+insert into Rockit (desk,color,roomNumber)values (15, "yellow", 23);
+insert into Rockit (desk,color,roomNumber)values (40, "green", 52);
+insert into Rockit (desk,color,roomNumber)values (28, "red", 13);
+insert into Rockit (desk,color,roomNumber)values (23, "gold", 69);

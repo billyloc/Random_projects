@@ -1,0 +1,7 @@
+steps to add functionality
+
+1. add the NEW button to the racers page
+2. create the route to handle the request
+3. create the controller method to handle the request
+4. talk to the database
+5. return the new view page

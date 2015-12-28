@@ -1,0 +1,24 @@
+drop database if exists Cars;
+
+create database Cars;
+use Cars;
+
+create table Vehicles (
+	vehicleID INT AUTO_INCREMENT primary key not null,
+	make varchar(255) not null,
+	model varchar(255) not null,
+	year INT not null
+
+);
+
+insert into Vehicles (make,model,year) values ("Ford", "Mustang", 2014);
+insert into Vehicles (make,model,year) values ("Kia", "Optima", 2007);
+insert into Vehicles (make,model,year) values ("Dodge", "Ram", 2005);
+insert into Vehicles (make,model,year) values ("Chevy", "Equinox", 2005);
+insert into Vehicles (make,model,year) values ("Nissan", "Altima", 2005);
+
+
+
+
+
+	
